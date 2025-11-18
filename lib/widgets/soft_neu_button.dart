@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-class NeuButton extends StatelessWidget {
+class SoftNeuButton extends StatelessWidget {
   final String label;
   final Color color;
-  final VoidCallback onTap;
   final double size;
+  final VoidCallback onTap;
+  final Color textColor;
 
-  const NeuButton({
+  const SoftNeuButton({
     super.key,
     required this.label,
     required this.color,
+    required this.textColor,
     required this.onTap,
     this.size = 70,
   });
@@ -23,24 +25,28 @@ class NeuButton extends StatelessWidget {
         width: size,
         decoration: BoxDecoration(
           color: color,
-          shape: BoxShape.circle,
+          borderRadius: BorderRadius.circular(14),
           boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.5),
-              offset: const Offset(4, 4),
-              blurRadius: 10,
+            const BoxShadow(
+              color: Colors.white,
+              offset: Offset(-4, -4),
+              blurRadius: 6,
             ),
             BoxShadow(
-              color: Colors.white.withOpacity(0.05),
-              offset: const Offset(-4, -4),
-              blurRadius: 10,
+              color: Colors.black.withOpacity(0.18),
+              offset: const Offset(4, 4),
+              blurRadius: 6,
             ),
           ],
         ),
         child: Center(
           child: Text(
             label,
-            style: const TextStyle(fontSize: 22, color: Colors.white),
+            style: TextStyle(
+              fontSize: 26,
+              fontWeight: FontWeight.w600,
+              color: textColor,
+            ),
           ),
         ),
       ),
