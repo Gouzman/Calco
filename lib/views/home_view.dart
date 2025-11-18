@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import '../themes/dark_neu_theme.dart';
 import 'calculator_view.dart';
 import 'calculator_white_soft_view.dart';
+import './calculator_scientific_view.dart';
+import 'calculator_modern_view.dart';
+import 'calculator_modern_white_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -58,6 +61,45 @@ class HomeView extends StatelessWidget {
           ),
 
           const Divider(height: 1),
+
+          modelItem(
+            title: "Calco 3",
+            img: "assets/images/image3.png",
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const CalculatorScientificView(),
+                ),
+              );
+            },
+          ),
+
+          const Divider(height: 1),
+          modelItem(
+            title: "Modern Yellow",
+            img: "assets/images/image4.png", // Mets ton image
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const CalculatorModernView()),
+              );
+            },
+          ),
+          const Divider(height: 1),
+
+          modelItem(
+            title: "Modern White & Yellow",
+            img: "assets/images/image5.png",
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const CalculatorModernWhiteView(),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );

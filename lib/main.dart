@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'viewmodels/calculator_viewmodel.dart';
 import 'views/home_view.dart';
+import 'views/graph_view.dart';
 
 void main() {
   runApp(
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const HomeView(),
+      routes: {"/graph": (context) => const GraphView()},
     );
   }
 }

@@ -25,13 +25,15 @@ class NeuButton extends StatelessWidget {
           color: color,
           shape: BoxShape.circle,
           boxShadow: [
+            // Ombre forte (NE PAS éclaircir)
             BoxShadow(
-              color: Colors.black.withOpacity(0.5),
+              color: Colors.black.withValues(alpha: 0.8),
               offset: const Offset(4, 4),
               blurRadius: 10,
             ),
+            // Highlight très discret
             BoxShadow(
-              color: Colors.white.withOpacity(0.05),
+              color: Colors.white.withValues(alpha: 0.05),
               offset: const Offset(-4, -4),
               blurRadius: 10,
             ),

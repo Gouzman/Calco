@@ -67,7 +67,7 @@ class CalculatorView extends StatelessWidget {
             child: Center(
               child: Text(
                 "Espace Publicité",
-                style: TextStyle(color: Colors.white.withOpacity(0.3)),
+                style: TextStyle(color: Colors.white.withValues(alpha: 0.3)),
               ),
             ),
           ),

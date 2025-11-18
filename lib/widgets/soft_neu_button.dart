@@ -33,7 +33,7 @@ class SoftNeuButton extends StatelessWidget {
               blurRadius: 6,
             ),
             BoxShadow(
-              color: Colors.black.withOpacity(0.18),
+              color: Colors.black.withValues(alpha: 0.18),
               offset: const Offset(4, 4),
               blurRadius: 6,
             ),
