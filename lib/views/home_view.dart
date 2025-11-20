@@ -5,6 +5,7 @@ import 'calculator_white_soft_view.dart';
 import './calculator_scientific_view.dart';
 import 'calculator_modern_view.dart';
 import 'calculator_modern_white_view.dart';
+import 'calculator_scientific_pro_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -96,6 +97,20 @@ class HomeView extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (_) => const CalculatorModernWhiteView(),
+                ),
+              );
+            },
+          ),
+
+          const Divider(height: 1),
+          modelItem(
+            title: "Scientific Graph Pro",
+            img: "assets/images/image6.png",
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const CalculatorScientificProView(),
                 ),
               );
             },

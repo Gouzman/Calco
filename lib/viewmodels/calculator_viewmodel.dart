@@ -6,6 +6,8 @@ class CalculatorViewModel extends ChangeNotifier {
 
   String get expression => engine.expression;
 
+  get result => null;
+
   void input(String value) {
     engine.add(value);
     notifyListeners();
