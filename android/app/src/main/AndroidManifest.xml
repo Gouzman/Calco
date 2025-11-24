@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ci.gouzman.calco">
     <application
         android:label="Calco"
         android:name="${applicationName}"

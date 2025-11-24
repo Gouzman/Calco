@@ -1,4 +1,4 @@
-package com.example.calco
+package ci.gouzman.calco
 
 import io.flutter.embedding.android.FlutterActivity
 

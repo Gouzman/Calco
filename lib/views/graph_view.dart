@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:math_expressions/math_expressions.dart';
 
+
 class GraphView extends StatefulWidget {
   const GraphView({super.key});
 
